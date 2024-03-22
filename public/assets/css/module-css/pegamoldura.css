@@ -1,0 +1,24 @@
+.bnt-WhatsApp-sales {
+  color: #ffffff;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: #48c857;
+  gap: 10px;
+  font-weight: bold;
+  max-width: 300px;
+  font-size: 16px !important;
+  margin: 0px 0px 20px;
+  border-radius: 5px;
+  justify-content: center;
+}
+
+.bnt-WhatsApp-sales:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.my-whatsapp-icon-sales {
+  font-size: 30px;
+}

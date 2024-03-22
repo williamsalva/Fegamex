@@ -1,0 +1,47 @@
+.product-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+.benefits-left,
+.benefits-right {
+  flex: 1;
+}
+.benefits-left {
+  margin-right: 50px;
+}
+
+.benefits-right {
+  margin-left: 50px;
+}
+
+.benefit {
+  margin-bottom: 50px;
+}
+
+
+
+.product-image-container img {
+  width: 120%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+@media (max-width: 768px) {
+  .product-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .product-image-container {
+    flex: 1;
+  }
+
+  .benefits-right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}

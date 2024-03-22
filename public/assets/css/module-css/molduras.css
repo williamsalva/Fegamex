@@ -1,0 +1,36 @@
+.box-characteristics {
+  position: relative;
+  display: block;
+  margin-top: 20px;
+  padding: 20px;
+  background: rgb(244, 244, 244);
+}
+
+.row-characteristics {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/** RTL **/
+
+/** responsive-css **/
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 991px) {
+}
+
+@media only screen and (max-width: 767px) {
+  .team-section {
+    padding: 70px 0px 25px 0px;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+}
+
+@media only screen and (max-width: 499px) {
+}
