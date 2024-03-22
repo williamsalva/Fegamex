@@ -22,7 +22,7 @@ export default function Menu() {
                     </ul> */}
         </li>
         <li>
-          <Link href="/about/">Nosotros</Link>
+          <Link href="/nosotros/">Nosotros</Link>
         </li>
         <li>
           <Link href="/instrucciones/">Instrucciones</Link>
