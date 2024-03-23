@@ -30,10 +30,6 @@ export default function Banner() {
   return (
     <>
       <section className="banner-style-three p_relative">
-        <div
-          className="shape"
-          style={{ backgroundImage: "url(/assets/images/shape/shape-19.png)" }}
-        ></div>
         <Swiper {...swiperOptions} className="banner-carousel">
           <SwiperSlide className="slide-item p_relative">
             <div
@@ -44,8 +40,8 @@ export default function Banner() {
             ></div>
             <div className="pattern-layer"></div>
             <div className="auto-container">
-              <div className="row clearfix justify-content-between">
-                <div className="col-lg-6 col-md-12 col-sm-12">
+              <div className="row clearfix justify-content-between orderRow">
+                <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                   <div className="content-box">
                     <h2>Molduras Decorativas</h2>
                     <p>
@@ -58,7 +54,7 @@ export default function Banner() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12">
+                <div className="col-lg-6 col-md-12 col-sm-12 order-1 order-lg-2">
                   <div className="image-box">
                     <div className="image-shape">
                       <figure
@@ -150,15 +146,6 @@ export default function Banner() {
               </div>
             </div>
           </SwiperSlide>
-
-          <div className="owl-nav">
-            <button type="button" className="owl-prev h1p">
-              <span className="icon-5"></span>
-            </button>
-            <button type="button" className="owl-next h1n">
-              <span className="icon-6"></span>
-            </button>
-          </div>
         </Swiper>
       </section>
     </>

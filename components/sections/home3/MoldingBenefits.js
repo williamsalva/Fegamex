@@ -1,18 +1,5 @@
 import Link from "next/link";
 
-// Resistencia Duradera:
-
-// Nuestras molduras están diseñadas para resistir el paso del tiempo y los elementos exteriores. Fabricadas con materiales de alta calidad, como el poliestireno recubierto con mortero, nuestras molduras mantienen su integridad estructural incluso en condiciones adversas, garantizando una decoración duradera y de larga duración.
-// Versatilidad Estilística:
-
-// Con una amplia gama de estilos y diseños, nuestras molduras ofrecen una versatilidad estilística incomparable. Desde estilos clásicos hasta contemporáneos, nuestras molduras pueden adaptarse a una variedad de proyectos arquitectónicos, permitiendo a nuestros clientes expresar su creatividad y personalidad a través del diseño de sus espacios.
-// Instalación Sencilla:
-
-// Facilitamos la instalación de nuestras molduras con un diseño pensado para la comodidad de nuestros clientes. Con instrucciones claras y herramientas mínimas requeridas, nuestros productos están diseñados para que la instalación sea rápida y sin complicaciones, permitiendo a nuestros clientes disfrutar de la belleza de sus nuevos espacios en poco tiempo.
-// Bajo Mantenimiento:
-
-// Nuestras molduras requieren poco mantenimiento para mantener su belleza y funcionalidad. Gracias a su resistencia a la humedad y al ambiente exterior, nuestras molduras son fáciles de limpiar y mantener, lo que permite a nuestros clientes disfrutar de sus espacios decorativos sin preocupaciones adicionales de mantenimiento constante.
-
 const MoldingBenefits = () => {
   return (
     <>

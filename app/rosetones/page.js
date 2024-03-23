@@ -13,7 +13,7 @@ export default function Home() {
                 <h1 className="title-section">Rosetones</h1>
               </div>
               <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="col-lg-6 col-md-12 col-sm-12 image-column order-2 order-lg-1">
                   <div className="content_block_three">
                     <div className="content-box mr_110">
                       <div className="sec-title mb_20">
@@ -45,7 +45,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="col-lg-6 col-md-12 col-sm-12 image-column order-1 order-lg-2">
                   <div className="image_block_two">
                     <div className="image-box">
                       <figure className="image">
@@ -57,7 +57,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className=" col-md-12 col-sm-12 ">
+                <div className=" col-md-12 col-sm-12 order-3">
                   <h3>Características Principales:</h3>
                   <ul className="list-style-one clearfix mt_20 mb_20">
                     <li>Variedad de Diseños:</li>

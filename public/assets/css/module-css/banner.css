@@ -1,12 +1,11 @@
-
 /** banner-section **/
 
-.banner-section{
+.banner-section {
   position: relative;
   overflow: hidden;
 }
 
-.banner-section .pattern-layer{
+.banner-section .pattern-layer {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -16,15 +15,15 @@
   background-repeat: no-repeat;
   background-position: bottom center;
 }
-  
-.banner-carousel .slide-item{
+
+.banner-carousel .slide-item {
   position: relative;
   padding: 180px 0px 225px 0px;
 }
 
-.banner-carousel .slide-item:before{
+.banner-carousel .slide-item:before {
   position: absolute;
-  content: '';
+  content: "";
   background: #000;
   width: 100%;
   height: 100%;
@@ -33,40 +32,40 @@
   opacity: 0.5;
   z-index: 1;
 }
-  
-.banner-carousel .content-box{
+
+.banner-carousel .content-box {
   position: relative;
   display: block;
   z-index: 5;
   max-width: 600px;
 }
-  
-.banner-carousel .slide-item .bg-layer{
+
+.banner-carousel .slide-item .bg-layer {
   position: absolute;
-  left:0;
-  top:0;
-  width:100%;
-  height:100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  -webkit-transform:scale(1);
-  -ms-transform:scale(1);
-  transform:scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transition: all 8000ms linear;
   -moz-transition: all 8000ms linear;
   -ms-transition: all 8000ms linear;
   -o-transition: all 8000ms linear;
   transition: all 8000ms linear;
 }
-  
-.banner-carousel .swiper-slide-active .slide-item .bg-layer{
-  -webkit-transform:scale(1.25);
-  -ms-transform:scale(1.25);
-  transform:scale(1.25);
+
+.banner-carousel .swiper-slide-active .slide-item .bg-layer {
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
 }
-  
-.banner-carousel .content-box h2{
+
+.banner-carousel .content-box h2 {
   font-size: 85px;
   line-height: 74px;
   font-weight: 800;
@@ -85,11 +84,11 @@
   transition: all 1000ms ease;
 }
 
-.banner-carousel .content-box h2 span{
+.banner-carousel .content-box h2 span {
   color: var(--theme-color);
 }
-  
-.banner-carousel .swiper-slide-active .content-box h2{
+
+.banner-carousel .swiper-slide-active .content-box h2 {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -103,14 +102,14 @@
   transition-delay: 700ms;
 }
 
-.banner-carousel .swiper-slide-active .image-box{
+.banner-carousel .swiper-slide-active .image-box {
   position: absolute;
   z-index: 6;
-   width: 50%;
-   bottom: 20%;
+  width: 50%;
+  bottom: 20%;
 }
-  
-.banner-carousel .content-box p{
+
+.banner-carousel .content-box p {
   font-size: 18px;
   line-height: 32px;
   margin-bottom: 33px;
@@ -127,8 +126,8 @@
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease;
 }
-  
-.banner-carousel .swiper-slide-active .content-box p{
+
+.banner-carousel .swiper-slide-active .content-box p {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -141,8 +140,8 @@
   -o-transition-delay: 1000ms;
   transition-delay: 1000ms;
 }
-  
-.banner-carousel .content-box .btn-box{
+
+.banner-carousel .content-box .btn-box {
   opacity: 0;
   -webkit-transform: translateY(50px);
   -moz-transform: translateY(50px);
@@ -155,8 +154,8 @@
   -o-transition: all 1000ms ease;
   transition: all 1000ms ease;
 }
-  
-.banner-carousel .swiper-slide-active .content-box .btn-box{
+
+.banner-carousel .swiper-slide-active .content-box .btn-box {
   opacity: 1;
   -webkit-transform: translateY(0);
   -moz-transform: translateY(0);
@@ -170,7 +169,7 @@
   transition-delay: 1300ms;
 }
 
-.banner-section .pattern-layer .pattern-1{
+.banner-section .pattern-layer .pattern-1 {
   position: absolute;
   top: 0px;
   right: 200px;
@@ -185,7 +184,7 @@
   animation: service_hexagon_2 15s infinite linear;
 }
 
-.banner-section .pattern-layer .pattern-2{
+.banner-section .pattern-layer .pattern-2 {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -196,7 +195,7 @@
   z-index: 1;
 }
 
-.banner-section .owl-nav{
+.banner-section .owl-nav {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -205,7 +204,7 @@
   z-index: 99;
 }
 
-.banner-section .owl-nav button{
+.banner-section .owl-nav button {
   position: absolute;
   top: 0px;
   display: inline-block;
@@ -220,29 +219,29 @@
   transition: all 500ms ease;
 }
 
-.banner-section .owl-nav button.owl-prev{
+.banner-section .owl-nav button.owl-prev {
   left: 120px;
 }
 
-.banner-section .owl-nav button.owl-next{
+.banner-section .owl-nav button.owl-next {
   right: 120px;
 }
 
-.banner-section .owl-nav button:hover{
+.banner-section .owl-nav button:hover {
   color: #fff;
   background: var(--theme-color);
 }
 
-.banner-style-two .banner-carousel .slide-item{
+.banner-style-two .banner-carousel .slide-item {
   padding: 340px 0px 225px 0px;
 }
 
-.banner-style-two .banner-carousel .slide-item:before{
+.banner-style-two .banner-carousel .slide-item:before {
   background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
   opacity: 0.6;
 }
 
-.banner-style-two .pattern-layer .pattern-3{
+.banner-style-two .pattern-layer .pattern-3 {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -253,29 +252,29 @@
   z-index: 1;
 }
 
-.banner-style-three .banner-carousel .content-box h2{
+.banner-style-three .banner-carousel .content-box h2 {
   font-size: 64px;
 }
 
-.banner-style-three .banner-carousel .slide-item{
+.banner-style-three .banner-carousel .slide-item {
   padding: 160px 0px 245px 0px;
 }
 
-.banner-style-three .banner-carousel .slide-item:before{
+.banner-style-three .banner-carousel .slide-item:before {
   opacity: 1;
-  background: #FF0003;
+  background: #ff0003;
   mix-blend-mode: multiply;
 }
 
-.banner-style-three .banner-carousel .content-box .theme-btn.btn-three{
+.banner-style-three .banner-carousel .content-box .theme-btn.btn-three {
   color: var(--title-color) !important;
 }
 
-.banner-style-three .banner-carousel .content-box .theme-btn.btn-three:hover{
+.banner-style-three .banner-carousel .content-box .theme-btn.btn-three:hover {
   color: #fff !important;
 }
 
-.banner-style-three .pattern-layer .pattern-4{
+.banner-style-three .pattern-layer .pattern-4 {
   position: absolute;
   left: 0px;
   top: 0px;
@@ -285,7 +284,7 @@
   z-index: 1;
 }
 
-.banner-style-three .pattern-layer .pattern-5{
+.banner-style-three .pattern-layer .pattern-5 {
   position: absolute;
   top: 276px;
   right: 0px;
@@ -295,7 +294,7 @@
   z-index: 1;
 }
 
-.banner-style-three .shape{
+.banner-style-three .shape {
   position: absolute;
   left: 0px;
   bottom: 0px;
@@ -307,107 +306,79 @@
   z-index: 2;
 }
 
-
-
 /** RTL **/
 
-
-.rtl .banner-carousel .content-box{
+.rtl .banner-carousel .content-box {
   text-align: right;
 }
 
-
 /** responsive-css **/
 
-@media only screen and (max-width: 1700px){
-  .banner-section .owl-nav{
+@media only screen and (max-width: 1700px) {
+  .banner-section .owl-nav {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1200px){
-
+@media only screen and (max-width: 1200px) {
 }
 
-@media only screen and (max-width: 991px){
-  .banner-style-three .pattern-layer{
+@media only screen and (max-width: 991px) {
+  .banner-style-three .pattern-layer {
     display: none;
   }
 }
 
-@media only screen and (max-width: 767px){
-  .banner-carousel .slide-item{
+@media only screen and (max-width: 767px) {
+  .banner-style-three {
+    padding-bottom: 120px;
+  }
+  .swiper-slide {
+    height: auto !important;
+  }
+
+  .banner-carousel .slide-item {
     padding: 90px 0px 136px 0px;
   }
 
-  .banner-carousel .content-box h2{
+  .banner-carousel .content-box h2 {
     font-size: 40px;
     line-height: 50px;
   }
 
-  .banner-section .pattern-layer{
+  .banner-section .pattern-layer {
     display: none;
   }
 
-  .banner-style-two .banner-carousel .slide-item{
+  .banner-style-two .banner-carousel .slide-item {
     padding: 280px 0px 100px 0px;
   }
 
-  .banner-style-three .banner-carousel .content-box h2{
+  .banner-style-three .banner-carousel .content-box h2 {
     font-size: 40px;
   }
 
-  .banner-style-three .banner-carousel .slide-item{
+  .banner-style-three .banner-carousel .slide-item {
     padding: 100px 0px 185px 0px;
+  }
+  .banner-carousel .swiper-slide-active .image-box {
+    width: 95%;
   }
 }
 
-@media only screen and (max-width: 599px){
-
+.orderRow {
+  display: flex;
+  flex-direction: column-reverse;
 }
 
-@media only screen and (max-width: 499px){
-
+@media (min-width: 992px) {
+  .orderRow {
+    flex-direction: row;
+  }
 }
 
+@media only screen and (max-width: 599px) {
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media only screen and (max-width: 499px) {
+}

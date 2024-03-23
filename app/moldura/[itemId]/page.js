@@ -28,7 +28,7 @@ const moldura = ({ params }) => {
                 <h1 className="title-section">{moldura.title}</h1>
               </div>
               <div className="row">
-                <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="col-lg-6 col-md-12 col-sm-12 image-column order-2 order-lg-1">
                   <div className="content_block_three">
                     <div className="content-box mr_110">
                       <div className="sec-title mb_20">
@@ -63,7 +63,7 @@ const moldura = ({ params }) => {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 image-column">
+                <div className="col-lg-6 col-md-12 col-sm-12 image-column order-1 order-lg-2">
                   <div className="image_block_two">
                     <div className="image-box">
                       <figure className="image">
@@ -72,7 +72,7 @@ const moldura = ({ params }) => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-12 col-sm-12 ">
+                <div className="col-md-12 col-sm-12 order-3">
                   <h3>Características Principales:</h3>
                   <ul className="list-style-one clearfix mt_20 mb_20">
                     <li>Diseño arquitectónico excepcional:</li>
@@ -101,7 +101,7 @@ const moldura = ({ params }) => {
                     </p>
                   </ul>
                 </div>
-                <div className="col-lg-6 col-md-12 col-sm-12 mb_20">
+                <div className="col-lg-6 col-md-12 col-sm-12 mb_20 order-4">
                   <div className="box-characteristics">
                     <h3>Especificaciones Técnicas:</h3>
                     <div className="row-characteristics mt_10">
