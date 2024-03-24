@@ -252,6 +252,12 @@ h6 {
   transition: all 500ms ease;
   font-size: 72px;
 }
+
+@media (max-width: 768px) {
+  .title-section {
+    font-size: 65px;
+  }
+}
 /* Preloader */
 
 .handle-preloader {

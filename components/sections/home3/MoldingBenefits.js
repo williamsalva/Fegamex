@@ -3,7 +3,7 @@ import Link from "next/link";
 const MoldingBenefits = () => {
   return (
     <>
-      <section className="MoldingBenefits centred pb_120">
+      <section className="moldingBenefits centred">
         <div className="sec-title mb_70">
           <h6>Beneficios</h6>
           <h2>Por qué Elegir Nuestras Molduras 😎</h2>

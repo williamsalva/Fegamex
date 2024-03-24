@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function ItemMolduras({ title, img, id }) {
   return (
-    <div className="col-lg-4 col-md-6 col-sm-12 team-block">
+    <div className="col-lg-4 col-md-6 col-6 team-block">
       <Link href={`/moldura/${id}`}>
         <div
           className="team-block-one wow fadeInUp animated"

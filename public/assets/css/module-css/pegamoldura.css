@@ -22,3 +22,9 @@
 .my-whatsapp-icon-sales {
   font-size: 30px;
 }
+
+@media (max-width: 768px) {
+  .title-section {
+    font-size: 3rem !important;
+  }
+}

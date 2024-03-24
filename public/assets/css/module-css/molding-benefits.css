@@ -6,23 +6,33 @@
   margin: 0 auto;
 }
 
+.moldingBenefits {
+  padding-bottom: 50px;
+}
+
 .benefits-left,
 .benefits-right {
   flex: 1;
+  padding: 20px;
 }
-.benefits-left {
-  margin-right: 50px;
-}
+@media (min-width: 992px) {
+  .benefits-left {
+    margin-right: 50px;
+    padding: 0px;
+  }
 
-.benefits-right {
-  margin-left: 50px;
+  .benefits-right {
+    margin-left: 50px;
+    padding: 0px;
+  }
+  .moldingBenefits {
+    padding-bottom: 120px;
+  }
 }
 
 .benefit {
   margin-bottom: 50px;
 }
-
-
 
 .product-image-container img {
   width: 120%;
