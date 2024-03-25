@@ -28,12 +28,7 @@ export default function Home() {
   };
   return (
     <>
-      <Layout
-        headerStyle={1}
-        footerStyle={1}
-        breadcrumbTitle="Nosotros"
-        breadcrumbNameImage="Nosotros"
-      >
+      <Layout headerStyle={1} footerStyle={1}>
         {/* about-section */}
         <section className="about-section pt_120 pb_120">
           <div className="pattern-layer rotate-me"></div>

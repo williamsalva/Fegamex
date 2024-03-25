@@ -268,7 +268,7 @@ export default function Home() {
                       <h3>Email</h3>
                       <p>
                         <Link href="mailto:contact@example.com">
-                          contacto@fegamex.com
+                          fergarcia5654@gmail.com
                         </Link>
                         <br />{" "}
                       </p>
@@ -288,10 +288,9 @@ export default function Home() {
                       <h3>Servicio al Cliente</h3>
                       <p>
                         WhatsApp <br />
-                        <Link href="tel:2085550112">
-                          Cel. 33104 18179{" "}
-                        </Link>{" "}
-                        (24/7)
+                        <Link href="https://wa.me/523310418179?text=Hola%20Fegamex">
+                          3310418179{" "}
+                        </Link>
                       </p>
                     </div>
                   </div>

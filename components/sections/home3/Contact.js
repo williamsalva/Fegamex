@@ -22,10 +22,13 @@ const Contact = () => {
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 form-column">
               <div className="form-inner ml_40">
-                <div className="btn-box">
-                  <Link href="/about" className="bnt-WhatsApp-sales">
+                <div className="btn-box mt_10">
+                  <Link
+                    href="https://wa.me/523310418179?text=Hola%20FEGAMEX%20quiero%20más%20información%20sobre%20sus%20productos%20de%20molduras%20decorativas"
+                    className="bnt-WhatsApp-sales"
+                  >
                     <i className="fab fa-whatsapp my-whatsapp-icon-sales"></i>
-                    Envianos un WhatsApp
+                    Envíanos un WhatsApp
                   </Link>
                 </div>
               </div>

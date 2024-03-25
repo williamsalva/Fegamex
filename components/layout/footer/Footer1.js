@@ -87,7 +87,7 @@ export default function Footer1() {
                 <div className="footer-widget contact-widget">
                   <div className="widget-title">
                     <h4>
-                      Envianos un WhatsApp para recibir nuestro catálogo de
+                      Envíanos un WhatsApp para recibir nuestro catálogo de
                       productos
                     </h4>
                   </div>

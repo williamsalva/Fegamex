@@ -49,7 +49,7 @@ export default function Banner() {
                     </p>
                     <div className="btn-box">
                       <Link href="/" className="theme-btn btn-three">
-                        ¡Conocelas!
+                        ¡Conócelas!
                       </Link>
                     </div>
                   </div>
@@ -88,7 +88,7 @@ export default function Banner() {
                     </p>
                     <div className="btn-box">
                       <Link href="/" className="theme-btn btn-three">
-                        ¡Conocelas!
+                        ¡Conócelas!
                       </Link>
                     </div>
                   </div>

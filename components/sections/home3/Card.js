@@ -45,7 +45,7 @@ export default function Card() {
                         href="/molduras-decorativas"
                         className="theme-btn btn-two"
                       >
-                        !Conocelas!
+                        !Conócelas!
                       </Link>
                     </div>
                   </div>
@@ -77,7 +77,7 @@ export default function Card() {
                     </p>
                     <div className="btn-box">
                       <Link href="/gargolas" className="theme-btn btn-two">
-                        ¡Conocelas!
+                        ¡Conócelas!
                       </Link>
                     </div>
                   </div>

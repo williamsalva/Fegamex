@@ -53,7 +53,7 @@ const moldura = ({ params }) => {
                       </div>
                       <div className="btn-box">
                         <Link
-                          href={`https://wa.me/5214423598154?text=Me%20interesa%20comprar%20la%20moldura%20${moldura.title}`}
+                          href={`https://wa.me/523310418179?text=Me%20interesa%20comprar%20la%20moldura%20${moldura.title}`}
                           className="bnt-WhatsApp-sales"
                         >
                           <i className="fab fa-whatsapp my-whatsapp-icon-sales"></i>
@@ -137,6 +137,7 @@ const moldura = ({ params }) => {
               </div>
             </div>
           </section>
+          
         </div>
       </Layout>
     </>

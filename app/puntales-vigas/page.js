@@ -35,7 +35,10 @@ export default function Home() {
                         </p>
                       </div>
                       <div className="btn-box">
-                        <Link href="/about" className="bnt-WhatsApp-sales">
+                        <Link
+                          href="https://wa.me/523310418179?text=Me%20interesa%20comprar%20puntales%20y%20vigas"
+                          className="bnt-WhatsApp-sales"
+                        >
                           <i className="fab fa-whatsapp my-whatsapp-icon-sales"></i>
                           Comprar por WhatsApp
                         </Link>

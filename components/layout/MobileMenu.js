@@ -125,11 +125,11 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
           <div className="contact-info">
             <h4>
               {" "}
-              Envianos un WhatsApp para recibir nuestro catálogo de productos
+              Envíanos un WhatsApp para recibir nuestro catálogo de productos
             </h4>
             <div className="btn-box">
               <Link
-                href="https://wa.me/send?phone=523315128570&text=Me interesa tu catálogo de productos Fegamex 😬"
+                href="https://wa.me/523310418179?text=interesa%20tu%20catálogo%20de%20productos%20Fegamex%😬"
                 className="bnt-WhatsApp-sales"
               >
                 <i className="fab fa-whatsapp my-whatsapp-icon-sales"></i>

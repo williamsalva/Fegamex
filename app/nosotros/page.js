@@ -28,12 +28,7 @@ export default function Home() {
   };
   return (
     <>
-      <Layout
-        headerStyle={1}
-        footerStyle={1}
-        breadcrumbTitle="Nosotros"
-        breadcrumbNameImage="Nosotros"
-      >
+      <Layout headerStyle={1} footerStyle={1}>
         {/* about-section */}
         <section className="about-section pt_120 pb_120">
           <div className="pattern-layer rotate-me"></div>
@@ -66,7 +61,7 @@ export default function Home() {
                 <div className="content_block_one">
                   <div className="content-box ml_40">
                     <div className="sec-title mb_20">
-                      <h6>Nosotros</h6>
+                      <h1 className="title-section">Nosotros</h1>
                       <h2>Expertos en Molduras Decorativas de Alta Calidad</h2>
                     </div>
                     <div className="text-box mb_40">
@@ -280,33 +275,21 @@ export default function Home() {
               </div>
               <div className="col-lg-6 col-md-12 col-sm-12 form-column">
                 <div className="form-inner ml_40">
-                  <form method="post" action="contact">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        name="email"
-                        placeholder="Your email"
-                        required
-                      />
-                      <button type="submit" className="theme-btn btn-two">
-                        Subscribe Now
-                      </button>
-                    </div>
-                  </form>
+                  <div className="btn-box mt_10">
+                    <Link
+                      href="https://wa.me/523310418179?text=Hola%20FEGAMEX%20quiero%20más%20información%20sobre%20sus%20productos%20de%20molduras%20decorativas"
+                      className="bnt-WhatsApp-sales"
+                    >
+                      <i className="fab fa-whatsapp my-whatsapp-icon-sales"></i>
+                      Envíanos un WhatsApp
+                    </Link>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
         {/* subscribe-section end */}
-
-        <ModalVideo
-          channel="youtube"
-          autoplay
-          isOpen={isOpen}
-          videoId="vfhzo499OeA"
-          onClose={() => setOpen(false)}
-        />
       </Layout>
     </>
   );
