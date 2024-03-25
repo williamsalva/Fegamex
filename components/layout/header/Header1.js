@@ -17,7 +17,7 @@ export default function Header1({
           scroll ? "fixed-header" : ""
         }`}
       >
-        <Link rel="icon" href="/assets/images/favicon.png" />
+        <link rel="icon" href="/assets/images/favicon.png" sizes="any" />
         {/* Header Top */}
         <div className="header-top">
           <div className="large-container">
@@ -25,7 +25,7 @@ export default function Header1({
               <ul className="info-list clearfix">
                 <li>
                   <i className="fab fa-whatsapp my-whatsapp-icon-header" />
-                  <Link href="https://wa.me/523310418179?text=Hola%20Fegamex"> 
+                  <Link href="https://wa.me/523310418179?text=Hola%20Fegamex">
                     WhatsApp: 3310418179
                   </Link>
                 </li>
