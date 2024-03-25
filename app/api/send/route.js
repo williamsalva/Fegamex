@@ -10,8 +10,8 @@ export async function POST(req, res) {
     console.log("🚀 ~ POST ~ email, name :", email, name);
 
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: "williams1991.rwag@gmail.com",
+      from: "hola@fegamex.com",
+      to: "williams.alva@hotmail.com",
       subject: "¡Tienes un nuevo mensaje en tu pagina Fegamex.com!",
       react: EmailTemplate({ name, email, phone, city, message }),
     });
