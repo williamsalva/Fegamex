@@ -9,14 +9,13 @@ import "swiper/css/free-mode";
 import { inter, manrope, futura } from "@/lib/font";
 
 export const metadata = {
-  title: "Fegamex",
-  description: "Fegamex Molduras decorativas",
-  keywords: `Fegamex Molduras de unicel,Pechos de paloma molduras,Decoración de interiores,Mejora del 
-    hogar con molduras de unicel,Estilos de molduras de unicel,Mexicano molduras de 
-    unicel,Molduras de unicel personalizadas,Molduras de unicel calidad,
-    Mejores precios en molduras de unicel,Compra molduras de unicel online,
-    Molduras de unicel para tu hogar,Molduras de unicel para oficina`,
-
+  title: "Fegamex | Molduras Decorativas de Alta Calidad",
+  description: "Expertos en molduras decorativas, gargolas, puntales, vigas y rosetones. Transforma tus espacios con productos de la mas alta calidad. Envios a toda la republica.",
+  keywords: `Fegamex, Molduras decorativas, Molduras de unicel, Pechos de paloma, Decoracion de interiores, 
+    Gargolas decorativas, Puntales y vigas, Rosetones, Pegamoldura, 
+    Mejora del hogar, Molduras personalizadas, Molduras de calidad,
+    Mejores precios en molduras, Compra molduras online,
+    Molduras para hogar, Molduras para oficina, Molduras Mexico`,
 };
 
 export default function RootLayout({ children }) {

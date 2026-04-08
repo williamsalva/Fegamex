@@ -2,9 +2,9 @@
 /* template-color */
 
 .handle-preloader{
-	background: #EC4E4F;
+	background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
 }
 
 .preloader-close{
-	color: #EC4E4F;
+	color: #c9302c;
 }

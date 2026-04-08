@@ -1,14 +1,15 @@
 "use client";
 import Link from "next/link";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination, EffectFade } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 const swiperOptions = {
-  modules: [Autoplay, Pagination, Navigation],
+  modules: [Autoplay, Pagination, Navigation, EffectFade],
   slidesPerView: 1,
   spaceBetween: 0,
+  effect: "fade",
   autoplay: {
-    delay: 7000,
+    delay: 6000,
     disableOnInteraction: false,
   },
   loop: true,
@@ -43,13 +44,14 @@ export default function Banner() {
               <div className="row clearfix justify-content-between orderRow">
                 <div className="col-lg-6 col-md-12 col-sm-12 order-2 order-lg-1">
                   <div className="content-box">
+                    <span className="badge-tag">Calidad Premium</span>
                     <h2>Molduras Decorativas</h2>
                     <p>
-                      Transforma tus Espacios con Nuestras Molduras Exclusivas
+                      Transforma tus espacios con elegancia y distincion. Molduras de alta calidad para interiores y exteriores.
                     </p>
                     <div className="btn-box">
-                      <Link href="/" className="theme-btn btn-three">
-                        ¡Conócelas!
+                      <Link href="/molduras-decorativas" className="theme-btn btn-three">
+                        Explorar Catalogo
                       </Link>
                     </div>
                   </div>
@@ -62,7 +64,7 @@ export default function Banner() {
                         data-wow-delay="00ms"
                         data-wow-duration="1800ms"
                       >
-                        <img src="/assets/images/banner/moldura.png" alt="" />
+                        <img src="/assets/images/banner/moldura.png" alt="Moldura decorativa de alta calidad" />
                       </figure>
                     </div>
                   </div>
@@ -82,13 +84,14 @@ export default function Banner() {
               <div className="row clearfix">
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <div className="content-box">
-                    <h2>Gárgolas Bajantes de Agua</h2>
+                    <span className="badge-tag">Funcionalidad + Estilo</span>
+                    <h2>Gargolas Decorativas</h2>
                     <p>
-                      Utiles para decorar fachadas y canalizar la salida de agua
+                      Combina funcionalidad y estetica. Perfectas para canalizar agua y embellecer fachadas.
                     </p>
                     <div className="btn-box">
-                      <Link href="/" className="theme-btn btn-three">
-                        ¡Conócelas!
+                      <Link href="/gargolas" className="theme-btn btn-three">
+                        Ver Coleccion
                       </Link>
                     </div>
                   </div>
@@ -101,7 +104,7 @@ export default function Banner() {
                         data-wow-delay="00ms"
                         data-wow-duration="1500ms"
                       >
-                        <img src="/assets/images/banner/gargola.png" alt="" />
+                        <img src="/assets/images/banner/gargola.png" alt="Gargola bajante decorativa" />
                       </figure>
                     </div>
                   </div>
@@ -121,11 +124,12 @@ export default function Banner() {
               <div className="row clearfix">
                 <div className="col-lg-6 col-md-12 col-sm-12">
                   <div className="content-box">
-                    <h2>Vigas y Puntales Decorativos</h2>
-                    <p>Encuentra la Armonía en Nuestras Vigas y Puntales</p>
+                    <span className="badge-tag">Estilo Colonial</span>
+                    <h2>Vigas y Puntales</h2>
+                    <p>Crea ambientes unicos con nuestras vigas y puntales decorativos de estilo colonial.</p>
                     <div className="btn-box">
-                      <Link href="/" className="theme-btn btn-three">
-                        Ver Más
+                      <Link href="/puntales-vigas" className="theme-btn btn-three">
+                        Descubrir Mas
                       </Link>
                     </div>
                   </div>
@@ -138,7 +142,7 @@ export default function Banner() {
                         data-wow-delay="00ms"
                         data-wow-duration="1500ms"
                       >
-                        <img src="/assets/images/banner/puntales.png" alt="" />
+                        <img src="/assets/images/banner/puntales.png" alt="Vigas y puntales decorativos" />
                       </figure>
                     </div>
                   </div>
@@ -148,6 +152,21 @@ export default function Banner() {
           </SwiperSlide>
         </Swiper>
       </section>
+
+      <style jsx>{`
+        .badge-tag {
+          display: inline-block;
+          background: linear-gradient(135deg, #c9302c 0%, #a02724 100%);
+          color: #fff;
+          padding: 8px 20px;
+          font-size: 12px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          border-radius: 30px;
+          margin-bottom: 20px;
+        }
+      `}</style>
     </>
   );
 }
