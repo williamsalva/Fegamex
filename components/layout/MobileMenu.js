@@ -65,9 +65,9 @@ const MobileMenu = ({ isSidebar, handleMobileMenu, handleSidebar }) => {
                     isActive.key == 2 ? "dropdown current" : "dropdown"
                   }
                 >
-                  <Link href="" onClick={() => handleToggle(2)}>
+                  <button type="button" onClick={() => handleToggle(2)} style={{ background: 'none', border: 'none', color: 'inherit', font: 'inherit', cursor: 'pointer', padding: 0, textAlign: 'left', width: '100%' }}>
                     Productos
-                  </Link>
+                  </button>
                   <ul
                     style={{
                       display: `${isActive.key == 2 ? "block" : "none"}`,
