@@ -105,16 +105,17 @@
  ***/
 
 :root {
-  --theme-color: #c9302c;
+  --theme-color: #ff4d5a;
   --secondary-color: #1a1a2e;
-  --pink-color: #ffc0cb;
-  --violet-color: #7f00ff;
-  --crimson-color: #dc143c;
-  --orange-color: #ffa500;
-  --text-color: #5a5a6e;
-  --title-color: #1a1a2e;
-  --accent-light: #fff5f5;
+  --text-color: #4b5563;
+  --title-color: #111827;
+  --accent-light: #f1faee;
   --surface-color: #f8f9fa;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -123,7 +124,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   background: #ffffff;
-  font-family: var(--futura);
+  font-family: var(--inter);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -522,14 +523,25 @@ img {
 }
 
 .theme-btn.btn-whatsapp {
-  background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+  background: #25d366 !important;
   color: #fff !important;
   box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .theme-btn.btn-whatsapp:hover {
   box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
   transform: translateY(-2px);
+  background: #20ba5a !important;
   color: #fff !important;
+}
+
+.theme-btn.btn-whatsapp i {
+  color: #fff !important;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .theme-btn.btn-three {
@@ -2261,4 +2273,16 @@ button.ltr {
     height: 45px;
     line-height: 45px;
   }
+}
+/* Global Override to eliminate persisting blue */
+.product-content h3 a, 
+.product-link, 
+.product-title {
+  color: #ff4d5a !important;
+}
+
+.product-content h3 a:hover, 
+.product-link:hover {
+  opacity: 0.8 !important;
+  color: #ff4d5a !important;
 }

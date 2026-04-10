@@ -19,7 +19,9 @@ export default function Home() {
         <Banner />
         <MoldingBenefits />
         <Card />
+        <Testimonial />
         <Contact />
+       
       </Layout>
     </>
   );

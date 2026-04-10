@@ -51,168 +51,181 @@ const Contact = () => {
 
       <style jsx>{`
         .cta-section-modern {
-          padding: 100px 0;
-          background: linear-gradient(135deg, #1a1a2e 0%, #2d2d44 100%);
+          padding: 120px 0;
+          background: #f8f9fa;
           position: relative;
           overflow: hidden;
-        }
-        
-        .cta-section-modern::before {
-          content: '';
-          position: absolute;
-          top: -50%;
-          right: -10%;
-          width: 500px;
-          height: 500px;
-          background: radial-gradient(circle, rgba(201, 48, 44, 0.2) 0%, transparent 70%);
-          border-radius: 50%;
+          border-top: 1px solid rgba(0,0,0,0.05);
         }
         
         .cta-wrapper {
           display: grid;
           grid-template-columns: 1.2fr 1fr;
-          gap: 60px;
+          gap: 80px;
           align-items: center;
         }
         
         .cta-badge {
           display: inline-block;
-          background: rgba(201, 48, 44, 0.2);
-          color: #e85d5a;
-          padding: 8px 20px;
-          font-size: 12px;
+          background: rgba(230, 57, 70, 0.1);
+          border: 1px solid rgba(230, 57, 70, 0.2);
+          color: var(--theme-color);
+          padding: 6px 16px;
+          font-size: 11px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 2px;
-          border-radius: 30px;
-          margin-bottom: 20px;
+          border-radius: 4px;
+          margin-bottom: 24px;
+          font-family: var(--inter);
         }
         
         .cta-content h2 {
-          font-size: 40px;
+          font-size: 3.5rem;
           font-weight: 800;
-          color: #fff;
-          margin-bottom: 20px;
-          line-height: 1.2;
+          color: var(--title-color);
+          margin-bottom: 24px;
+          line-height: 1.1;
+          font-family: var(--futura);
         }
         
         .cta-content p {
-          font-size: 16px;
-          color: rgba(255,255,255,0.8);
-          line-height: 1.8;
-          margin-bottom: 30px;
+          font-size: 1.2rem;
+          color: var(--text-color);
+          line-height: 1.6;
+          margin-bottom: 40px;
+          font-family: var(--inter);
         }
         
         .cta-features {
           display: flex;
           flex-wrap: wrap;
-          gap: 20px;
+          gap: 24px;
         }
         
         .feature-item {
           display: flex;
           align-items: center;
-          gap: 10px;
-          color: rgba(255,255,255,0.9);
-          font-size: 14px;
+          gap: 12px;
+          color: var(--text-color);
+          font-size: 15px;
+          font-family: var(--inter);
         }
         
         .check-icon {
           display: inline-flex;
           align-items: center;
           justify-content: center;
-          width: 24px;
-          height: 24px;
-          background: rgba(201, 48, 44, 0.3);
-          color: #e85d5a;
-          border-radius: 50%;
-          font-size: 12px;
-          font-weight: bold;
+          width: 20px;
+          height: 20px;
+          background: var(--theme-color);
+          color: #fff;
+          border-radius: 4px;
+          font-size: 10px;
         }
         
         .whatsapp-card {
           background: #fff;
-          padding: 40px;
-          border-radius: 20px;
+          padding: 60px 40px;
+          border-radius: 4px;
           text-align: center;
           position: relative;
+          box-shadow: var(--shadow-lg);
         }
         
         .whatsapp-icon {
-          width: 70px;
-          height: 70px;
-          background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-          border-radius: 50%;
+          width: 80px;
+          height: 80px;
+          background: #25d366;
+          border-radius: 4px;
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 0 auto 25px;
+          margin: 0 auto 30px;
+          box-shadow: 0 8px 16px rgba(37, 211, 102, 0.2);
         }
         
         .whatsapp-icon i {
-          font-size: 32px;
+          font-size: 36px;
           color: #fff;
         }
         
         .whatsapp-card h3 {
-          font-size: 22px;
+          font-size: 24px;
           font-weight: 700;
-          color: #1a1a2e;
-          margin-bottom: 10px;
+          color: var(--title-color);
+          margin-bottom: 12px;
+          font-family: var(--futura);
         }
         
         .whatsapp-card p {
-          font-size: 14px;
-          color: #5a5a6e;
-          margin-bottom: 25px;
+          font-size: 1rem;
+          color: var(--text-color);
+          margin-bottom: 30px;
+          font-family: var(--inter);
         }
         
         .whatsapp-btn {
           display: inline-block;
-          background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+          background: #25d366;
           color: #fff;
           padding: 16px 40px;
-          border-radius: 30px;
+          border-radius: 4px;
           font-weight: 700;
-          font-size: 15px;
-          transition: all 0.3s ease;
+          font-size: 14px;
+          transition: all 0.4s ease;
           text-transform: uppercase;
           letter-spacing: 1px;
+          width: 100%;
+          box-shadow: 0 4px 12px rgba(37, 211, 102, 0.1);
         }
         
         .whatsapp-btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 15px 30px rgba(37, 211, 102, 0.4);
+          transform: translateY(-4px);
+          box-shadow: 0 12px 24px rgba(37, 211, 102, 0.2);
+          background: #20ba5a;
           color: #fff;
         }
         
+        @media (max-width: 1199px) {
+          .cta-content h2 {
+            font-size: 2.75rem;
+          }
+        }
+
         @media (max-width: 991px) {
           .cta-wrapper {
             grid-template-columns: 1fr;
-            gap: 40px;
+            gap: 50px;
+            text-align: center;
           }
           
-          .cta-content h2 {
-            font-size: 32px;
+          .cta-features {
+            justify-content: center;
+          }
+
+          .cta-content p {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 600px;
           }
         }
         
         @media (max-width: 767px) {
           .cta-section-modern {
-            padding: 60px 0;
+            padding: 80px 0;
           }
           
           .cta-content h2 {
-            font-size: 28px;
+            font-size: 2.25rem;
           }
           
-          .cta-features {
-            flex-direction: column;
-            gap: 15px;
+          .feature-item {
+            font-size: 14px;
           }
           
           .whatsapp-card {
-            padding: 30px 20px;
+            padding: 40px 30px;
           }
         }
       `}</style>

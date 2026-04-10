@@ -107,11 +107,11 @@ export default function Footer1() {
 
       <style jsx>{`
         .footer-modern {
-          background: linear-gradient(180deg, #1a1a2e 0%, #12121c 100%);
+          background: var(--secondary-color);
         }
         
         .footer-modern .widget-section {
-          padding: 80px 0 50px;
+          padding: 100px 0 60px;
           background: transparent;
         }
         
@@ -120,149 +120,149 @@ export default function Footer1() {
           align-items: center;
           justify-content: space-between;
           padding-bottom: 40px;
-          margin-bottom: 50px;
-          border-bottom: 1px solid rgba(255,255,255,0.1);
+          margin-bottom: 60px;
+          border-bottom: 1px solid rgba(255,255,255,0.05);
         }
         
         .footer-top-bar .footer-logo img {
-          max-height: 60px;
+          max-height: 50px;
+          filter: brightness(0) invert(1);
         }
         
         .footer-tagline {
-          color: rgba(255,255,255,0.6);
-          font-size: 16px;
+          color: rgba(255,255,255,0.5);
+          font-size: 15px;
           margin: 0;
+          font-family: var(--inter);
         }
         
         .widget-title-modern {
           color: #fff;
-          font-size: 18px;
+          font-size: 1.25rem;
           font-weight: 700;
-          margin-bottom: 25px;
+          margin-bottom: 30px;
           position: relative;
-          padding-bottom: 15px;
+          font-family: var(--futura);
         }
         
         .widget-title-modern::after {
           content: '';
           position: absolute;
           left: 0;
-          bottom: 0;
-          width: 40px;
-          height: 3px;
-          background: linear-gradient(90deg, #c9302c 0%, #e85d5a 100%);
-          border-radius: 2px;
+          bottom: -8px;
+          width: 30px;
+          height: 2px;
+          background: var(--theme-color);
         }
         
         .footer-modern .logo-widget p {
-          color: rgba(255,255,255,0.7);
-          line-height: 1.8;
-          margin-bottom: 25px;
+          color: rgba(255,255,255,0.6);
+          line-height: 1.7;
+          margin-bottom: 30px;
+          font-family: var(--inter);
         }
         
         .social-links-modern {
           display: flex;
-          gap: 12px;
+          gap: 16px;
         }
         
         .social-links-modern li a {
-          width: 44px;
-          height: 44px;
+          width: 40px;
+          height: 40px;
           display: flex;
           align-items: center;
           justify-content: center;
-          background: rgba(255,255,255,0.05);
-          border-radius: 10px;
-          color: #fff;
-          transition: all 0.3s ease;
+          background: rgba(255,255,255,0.03);
+          border: 1px solid rgba(255,255,255,0.05);
+          border-radius: 4px;
+          color: rgba(255, 255, 255, 0.7);
+          transition: all 0.4s ease;
         }
         
         .social-links-modern li a:hover {
-          background: #c9302c;
-          transform: translateY(-3px);
+          background: var(--theme-color);
+          color: #fff;
+          border-color: var(--theme-color);
+          transform: translateY(-4px);
         }
         
         .links-list-modern li {
-          margin-bottom: 12px;
+          margin-bottom: 14px;
         }
         
         .links-list-modern li a {
-          color: rgba(255,255,255,0.7);
+          color: rgba(255,255,255,0.6);
           font-size: 15px;
           transition: all 0.3s ease;
-          display: inline-flex;
-          align-items: center;
-        }
-        
-        .links-list-modern li a::before {
-          content: '';
-          width: 0;
-          height: 2px;
-          background: #c9302c;
-          margin-right: 0;
-          transition: all 0.3s ease;
+          font-family: var(--inter);
         }
         
         .links-list-modern li a:hover {
-          color: #fff;
-          padding-left: 10px;
-        }
-        
-        .links-list-modern li a:hover::before {
-          width: 15px;
-          margin-right: 10px;
+          color: var(--theme-color);
+          padding-left: 8px;
         }
         
         .whatsapp-footer-btn {
           display: inline-flex;
           align-items: center;
-          gap: 10px;
-          background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+          gap: 12px;
+          background: var(--theme-color);
           color: #fff;
-          padding: 14px 30px;
-          border-radius: 30px;
-          font-weight: 600;
-          font-size: 15px;
-          transition: all 0.3s ease;
+          padding: 14px 28px;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 14px;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          transition: all 0.4s ease;
+          box-shadow: var(--shadow-md);
         }
         
         .whatsapp-footer-btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 10px 30px rgba(37, 211, 102, 0.3);
+          transform: translateY(-4px);
+          box-shadow: var(--shadow-lg);
+          background: #ff4d5a;
           color: #fff;
         }
         
         .whatsapp-footer-btn i {
-          font-size: 20px;
+          font-size: 18px;
         }
         
         .footer-bottom-modern {
-          background: rgba(0,0,0,0.2);
-          padding: 25px 0;
+          background: rgba(0,0,0,0.1);
+          padding: 30px 0;
+          border-top: 1px solid rgba(255,255,255,0.05);
         }
         
         .footer-bottom-modern .copyright p {
-          color: rgba(255,255,255,0.5);
-          font-size: 14px;
+          color: rgba(255,255,255,0.4);
+          font-size: 13px;
           margin: 0;
+          font-family: var(--inter);
         }
         
         .footer-bottom-modern .copyright a {
-          color: #c9302c;
+          color: rgba(255, 255, 255, 0.6);
           font-weight: 600;
+        }
+        
+        .footer-bottom-modern .copyright a:hover {
+          color: var(--theme-color);
         }
         
         @media (max-width: 991px) {
           .footer-top-bar {
             flex-direction: column;
-            gap: 15px;
+            gap: 20px;
             text-align: center;
           }
         }
         
         @media (max-width: 767px) {
           .footer-modern .widget-section {
-            padding: 50px 0 30px;
+            padding: 70px 0 40px;
           }
         }
       `}</style>

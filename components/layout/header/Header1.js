@@ -32,7 +32,7 @@ export default function Header1({
                 </li>
                 <li className="separator">|</li>
                 <li>
-                  <i className="fas fa-clock" style={{ color: '#c9302c', marginRight: '8px' }} />
+                  <i className="fas fa-clock" />
                   <span>Lun - Sab: 9:00 AM - 6:00 PM</span>
                 </li>
               </ul>
@@ -106,46 +106,60 @@ export default function Header1({
 
       <style jsx>{`
         .header-modern .header-top-modern {
-          background: linear-gradient(90deg, #1a1a2e 0%, #2d2d44 100%);
-          padding: 12px 0;
+          background: var(--secondary-color);
+          padding: 8px 0;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         }
         
         .header-top-modern .info-list {
           display: flex;
           align-items: center;
           justify-content: flex-end;
-          gap: 20px;
+          gap: 24px;
         }
         
         .header-top-modern .info-list li {
-          color: rgba(255,255,255,0.9);
-          font-size: 14px;
+          color: rgba(255,255,255,0.8);
+          font-size: 13px;
+          display: flex;
+          align-items: center;
+          font-family: var(--inter);
+        }
+
+        .header-top-modern .info-list li i {
+          margin-right: 8px;
+          color: var(--theme-color);
+          font-size: 15px;
         }
         
         .header-top-modern .info-list li.separator {
-          color: rgba(255,255,255,0.3);
-          padding: 0;
-          margin: 0;
+          color: rgba(255,255,255,0.2);
         }
         
         .header-top-modern .info-list li a {
-          color: rgba(255,255,255,0.9);
-          transition: color 0.3s ease;
+          color: rgba(255,255,255,0.8);
+          transition: all 0.3s ease;
         }
         
         .header-top-modern .info-list li a:hover {
-          color: #c9302c;
+          color: var(--theme-color);
         }
         
         .logo-box-modern {
-          background: linear-gradient(135deg, #c9302c 0%, #a02724 100%) !important;
+          background: white !important;
+          padding: 20px !important;
+          border-radius: 0 0 12px 12px;
+          box-shadow: var(--shadow-md);
         }
         
         .logo-box-modern .shape {
-          background: linear-gradient(135deg, #c9302c 0%, #a02724 100%) !important;
+          display: none;
         }
         
         @media (max-width: 767px) {
+          .header-top-modern .info-list {
+            justify-content: center;
+          }
           .header-top-modern .info-list li.separator,
           .header-top-modern .info-list li:last-child {
             display: none;

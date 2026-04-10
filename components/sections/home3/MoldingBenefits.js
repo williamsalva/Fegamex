@@ -64,112 +64,126 @@ const MoldingBenefits = () => {
 
       <style jsx>{`
         .moldingBenefits-modern {
-          padding: 100px 0;
-          background: linear-gradient(180deg, #fff 0%, #f8f9fa 100%);
+          padding: 120px 0;
+          background: var(--surface-color);
         }
         
         .section-header {
           text-align: center;
-          max-width: 600px;
-          margin: 0 auto 60px;
+          max-width: 700px;
+          margin: 0 auto 80px;
         }
         
         .section-header .subtitle {
           display: inline-block;
-          color: #c9302c;
-          font-size: 14px;
+          color: var(--theme-color);
+          font-size: 13px;
           font-weight: 700;
           text-transform: uppercase;
-          letter-spacing: 3px;
-          margin-bottom: 15px;
+          letter-spacing: 4px;
+          margin-bottom: 20px;
+          font-family: var(--inter);
         }
         
         .section-header h2 {
-          font-size: 42px;
+          font-size: 3.5rem;
           font-weight: 800;
-          color: #1a1a2e;
-          margin-bottom: 20px;
-          line-height: 1.2;
+          color: var(--title-color);
+          margin-bottom: 24px;
+          line-height: 1.1;
+          font-family: var(--futura);
         }
         
         .section-header p {
-          font-size: 16px;
-          color: #5a5a6e;
-          line-height: 1.7;
+          font-size: 1.15rem;
+          color: var(--text-color);
+          line-height: 1.6;
+          font-family: var(--inter);
         }
         
         .benefits-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 30px;
+          gap: 32px;
         }
         
         .benefit-card {
           position: relative;
           background: #fff;
-          padding: 40px 30px;
-          border-radius: 16px;
-          box-shadow: 0 10px 40px rgba(0,0,0,0.05);
-          transition: all 0.4s ease;
+          padding: 48px 40px;
+          border-radius: 4px;
+          border: 1px solid rgba(0,0,0,0.03);
+          box-shadow: var(--shadow-sm);
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
           overflow: hidden;
+          display: flex;
+          flex-direction: column;
+          height: 100%;
         }
         
         .benefit-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 20px 60px rgba(201, 48, 44, 0.15);
+          transform: translateY(-8px);
+          box-shadow: var(--shadow-lg);
+          border-color: rgba(230, 57, 70, 0.1);
         }
         
         .benefit-card:hover .benefit-line {
-          width: 100%;
+          width: 60px;
         }
         
         .benefit-number {
-          font-size: 48px;
+          font-size: 3rem;
           font-weight: 800;
-          color: rgba(201, 48, 44, 0.1);
+          color: rgba(230, 57, 70, 0.05);
           position: absolute;
-          top: 20px;
-          right: 25px;
+          top: 30px;
+          right: 32px;
           line-height: 1;
+          font-family: var(--futura);
         }
         
         .benefit-card h3 {
-          font-size: 20px;
+          font-size: 24px;
           font-weight: 700;
-          color: #1a1a2e;
-          margin-bottom: 15px;
+          color: var(--title-color);
+          margin-bottom: 16px;
+          font-family: var(--futura);
         }
         
         .benefit-card p {
-          font-size: 15px;
-          color: #5a5a6e;
-          line-height: 1.7;
+          font-size: 1rem;
+          color: var(--text-color);
+          line-height: 1.6;
           margin: 0;
+          font-family: var(--inter);
         }
         
         .benefit-line {
           position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 0;
-          height: 3px;
-          background: linear-gradient(90deg, #c9302c 0%, #e85d5a 100%);
+          bottom: 40px;
+          left: 40px;
+          width: 30px;
+          height: 2px;
+          background: var(--theme-color);
           transition: width 0.4s ease;
+          display: none; /* Subtelty */
         }
         
+        @media (max-width: 1199px) {
+          .section-header h2 {
+            font-size: 2.75rem;
+          }
+        }
+
         @media (max-width: 991px) {
           .benefits-grid {
             grid-template-columns: repeat(2, 1fr);
-          }
-          
-          .section-header h2 {
-            font-size: 32px;
           }
         }
         
         @media (max-width: 767px) {
           .moldingBenefits-modern {
-            padding: 60px 0;
+            padding: 80px 0;
           }
           
           .benefits-grid {
@@ -177,7 +191,7 @@ const MoldingBenefits = () => {
           }
           
           .section-header h2 {
-            font-size: 28px;
+            font-size: 2.25rem;
           }
         }
       `}</style>

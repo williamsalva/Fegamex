@@ -12,6 +12,9 @@ const swiperOptions = {
     delay: 6000,
     disableOnInteraction: false,
   },
+  fadeEffect: {
+    crossFade: true,
+  },
   loop: true,
 
   // Navigation
@@ -36,7 +39,7 @@ export default function Banner() {
             <div
               className="bg-layer"
               style={{
-                backgroundImage: "url(/assets/images/banner/banner-7.jpg)",
+                backgroundImage: "url(/assets/images/banner/banner-8.png)",
               }}
             ></div>
             <div className="pattern-layer"></div>
@@ -76,7 +79,7 @@ export default function Banner() {
             <div
               className="bg-layer"
               style={{
-                backgroundImage: "url(/assets/images/banner/banner-8.jpg)",
+                backgroundImage: "url(/assets/images/banner/banner-1.png)",
               }}
             ></div>
 
@@ -116,7 +119,7 @@ export default function Banner() {
             <div
               className="bg-layer"
               style={{
-                backgroundImage: "url(/assets/images/banner/banner-9.jpg)",
+                backgroundImage: "url(/assets/images/banner/banner-4.png)",
               }}
             ></div>
 
@@ -156,15 +159,38 @@ export default function Banner() {
       <style jsx>{`
         .badge-tag {
           display: inline-block;
-          background: linear-gradient(135deg, #c9302c 0%, #a02724 100%);
+          background: var(--theme-color);
           color: #fff;
-          padding: 8px 20px;
-          font-size: 12px;
+          padding: 6px 16px;
+          font-size: 11px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 2px;
-          border-radius: 30px;
+          border-radius: 4px;
+          margin-bottom: 24px;
+          box-shadow: var(--shadow-sm);
+        }
+        
+        .content-box h2 {
+          font-family: var(--futura);
+          font-size: 4rem;
+          line-height: 1.1;
           margin-bottom: 20px;
+          color: white;
+        }
+
+        .content-box p {
+          font-family: var(--inter);
+          font-size: 1.25rem;
+          color: rgba(255, 255, 255, 0.8);
+          max-width: 500px;
+          margin-bottom: 40px;
+        }
+
+        @media (max-width: 991px) {
+          .content-box h2 {
+            font-size: 3rem;
+          }
         }
       `}</style>
     </>

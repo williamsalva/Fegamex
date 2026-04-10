@@ -84,49 +84,53 @@ export default function Card() {
 
       <style jsx>{`
         .products-section-modern {
-          padding: 100px 0;
+          padding: 120px 0;
           background: #fff;
         }
         
         .section-header-products {
           text-align: center;
-          margin-bottom: 60px;
+          margin-bottom: 80px;
         }
         
         .section-header-products .subtitle {
           display: inline-block;
-          color: #c9302c;
-          font-size: 14px;
+          color: var(--theme-color);
+          font-size: 13px;
           font-weight: 700;
           text-transform: uppercase;
-          letter-spacing: 3px;
-          margin-bottom: 15px;
+          letter-spacing: 4px;
+          margin-bottom: 20px;
+          font-family: var(--inter);
         }
         
         .section-header-products h2 {
-          font-size: 42px;
+          font-size: 3.5rem;
           font-weight: 800;
-          color: #1a1a2e;
-          line-height: 1.2;
+          color: var(--title-color);
+          line-height: 1.1;
+          font-family: var(--futura);
         }
         
         .products-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 30px;
+          gap: 32px;
         }
         
         .product-card {
           background: #fff;
-          border-radius: 20px;
+          border-radius: 4px;
           overflow: hidden;
-          box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-          transition: all 0.4s ease;
+          box-shadow: var(--shadow-sm);
+          border: 1px solid rgba(0,0,0,0.03);
+          transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .product-card:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 25px 60px rgba(0,0,0,0.15);
+          transform: translateY(-8px);
+          box-shadow: var(--shadow-lg);
+          border-color: rgba(230, 57, 70, 0.1);
         }
         
         .product-card.featured {
@@ -136,27 +140,27 @@ export default function Card() {
         .product-image {
           position: relative;
           overflow: hidden;
-          background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-          padding: 30px;
-          min-height: 250px;
+          background: #f8fafc;
+          padding: 40px;
+          min-height: 280px;
           display: flex;
           align-items: center;
           justify-content: center;
         }
         
         .product-card.featured .product-image {
-          min-height: 300px;
+          min-height: 350px;
         }
         
         .product-image img {
           max-width: 100%;
-          max-height: 200px;
+          max-height: 240px;
           object-fit: contain;
-          transition: transform 0.5s ease;
+          transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .product-card:hover .product-image img {
-          transform: scale(1.1);
+          transform: scale(1.05);
         }
         
         .product-overlay {
@@ -165,12 +169,13 @@ export default function Card() {
           left: 0;
           right: 0;
           bottom: 0;
-          background: rgba(26, 26, 46, 0.85);
+          background: rgba(17, 24, 39, 0.4);
+          backdrop-filter: blur(4px);
           display: flex;
           align-items: center;
           justify-content: center;
           opacity: 0;
-          transition: opacity 0.4s ease;
+          transition: all 0.4s ease;
         }
         
         .product-card:hover .product-overlay {
@@ -178,16 +183,17 @@ export default function Card() {
         }
         
         .view-btn {
-          background: #c9302c;
+          background: var(--theme-color);
           color: #fff;
-          padding: 14px 32px;
-          border-radius: 30px;
-          font-weight: 600;
-          font-size: 14px;
+          padding: 12px 28px;
+          border-radius: 4px;
+          font-weight: 700;
+          font-size: 13px;
           text-transform: uppercase;
           letter-spacing: 1px;
-          transform: translateY(20px);
-          transition: all 0.3s ease;
+          transform: translateY(10px);
+          transition: all 0.4s ease;
+          box-shadow: var(--shadow-md);
         }
         
         .product-card:hover .view-btn {
@@ -195,59 +201,64 @@ export default function Card() {
         }
         
         .view-btn:hover {
-          background: #a02724;
+          background: #ff4d5a;
           color: #fff;
         }
         
         .product-content {
-          padding: 30px;
+          padding: 40px;
         }
         
         .product-content h3 {
-          font-size: 22px;
+          font-size: 1.5rem;
           font-weight: 700;
-          margin-bottom: 12px;
+          margin-bottom: 16px;
+          font-family: var(--futura);
+          line-height: 1.2;
         }
         
         .product-content h3 a {
-          color: #1a1a2e;
-          transition: color 0.3s ease;
+          color: #ff4d5a !important;
+          transition: all 0.3s ease;
         }
         
         .product-content h3 a:hover {
-          color: #c9302c;
+          color: #ff4d5a;
+          opacity: 0.8;
         }
         
         .product-content p {
-          font-size: 15px;
-          color: #5a5a6e;
-          line-height: 1.7;
-          margin-bottom: 20px;
+          font-size: 1rem;
+          color: var(--text-color);
+          line-height: 1.6;
+          margin-bottom: 32px;
+          font-family: var(--inter);
+          opacity: 0.8;
         }
         
         .product-link {
           display: inline-flex;
           align-items: center;
-          gap: 8px;
-          color: #c9302c;
-          font-weight: 600;
-          font-size: 14px;
+          gap: 12px;
+          color: #ff4d5a !important;
+          font-weight: 800;
+          font-size: 13px;
           text-transform: uppercase;
-          letter-spacing: 1px;
+          letter-spacing: 2px;
           transition: all 0.3s ease;
+          font-family: var(--inter);
+          text-decoration: none;
         }
         
         .product-link:hover {
-          color: #a02724;
-          gap: 15px;
+          gap: 18px;
+          opacity: 0.8;
         }
         
         .product-link .arrow {
           transition: transform 0.3s ease;
-        }
-        
-        .product-link:hover .arrow {
-          transform: translateX(5px);
+          font-size: 18px;
+          line-height: 1;
         }
         
         @media (max-width: 991px) {
@@ -260,17 +271,18 @@ export default function Card() {
           }
           
           .section-header-products h2 {
-            font-size: 32px;
+            font-size: 2.75rem;
           }
         }
         
         @media (max-width: 767px) {
           .products-section-modern {
-            padding: 60px 0;
+            padding: 80px 0;
           }
           
           .products-grid {
             grid-template-columns: 1fr;
+            gap: 24px;
           }
           
           .product-card.featured {
@@ -278,7 +290,11 @@ export default function Card() {
           }
           
           .section-header-products h2 {
-            font-size: 28px;
+            font-size: 2.25rem;
+          }
+
+          .product-content {
+            padding: 30px;
           }
         }
       `}</style>
