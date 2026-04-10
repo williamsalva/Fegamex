@@ -261,9 +261,9 @@
 }
 
 .banner-style-three .banner-carousel .slide-item:before {
-  opacity: 1;
-  background: #ff0003;
-  mix-blend-mode: multiply;
+  opacity: 0.85;
+  background: linear-gradient(135deg, rgba(26, 26, 46, 0.95) 0%, rgba(45, 45, 68, 0.8) 100%);
+  mix-blend-mode: normal;
 }
 
 .banner-style-three .banner-carousel .content-box .theme-btn.btn-three {

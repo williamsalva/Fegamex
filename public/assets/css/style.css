@@ -105,14 +105,17 @@
  ***/
 
 :root {
-  --theme-color: #eb292c;
-  --secondary-color: #0a0f20;
-  --pink-color: #ffc0cb;
-  --violet-color: #7f00ff;
-  --crimson-color: #dc143c;
-  --orange-color: #ffa500;
-  --text-color: #676767;
-  --title-color: #141417;
+  --theme-color: #ff4d5a;
+  --secondary-color: #1a1a2e;
+  --text-color: #4b5563;
+  --title-color: #111827;
+  --accent-light: #f1faee;
+  --surface-color: #f8f9fa;
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 body {
@@ -121,7 +124,7 @@ body {
   line-height: 28px;
   font-weight: 400;
   background: #ffffff;
-  font-family: var(--futura);
+  font-family: var(--inter);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
@@ -485,36 +488,73 @@ img {
   display: inline-block;
   overflow: hidden;
   vertical-align: middle;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   font-family: var(--manrope);
   color: #fff !important;
   text-align: center;
-  padding: 18px 35px;
+  padding: 16px 32px;
+  border-radius: 30px;
   z-index: 1;
-  transition: all 500ms ease;
+  transition: all 400ms ease;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
 }
 
 .theme-btn.btn-one {
-  background: var(--theme-color);
+  background: linear-gradient(135deg, var(--theme-color) 0%, #a02724 100%);
+  box-shadow: 0 8px 25px rgba(201, 48, 44, 0.3);
+}
+
+.theme-btn.btn-one:hover {
+  box-shadow: 0 12px 35px rgba(201, 48, 44, 0.4);
+  transform: translateY(-2px);
 }
 
 .theme-btn.btn-two {
-  background: var(--secondary-color);
+  background: linear-gradient(135deg, var(--secondary-color) 0%, #2d2d44 100%);
+  box-shadow: 0 8px 25px rgba(26, 26, 46, 0.3);
 }
+
+.theme-btn.btn-two:hover {
+  box-shadow: 0 12px 35px rgba(26, 26, 46, 0.4);
+  transform: translateY(-2px);
+}
+
 .theme-btn.btn-whatsapp {
-  background: #25d366;
-  color: #111b21 !important;
-}
-.theme-btn.btn-whatsapp:hover {
-  background: #128c7e;
+  background: #25d366 !important;
   color: #fff !important;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.theme-btn.btn-whatsapp:hover {
+  box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+  transform: translateY(-2px);
+  background: #20ba5a !important;
+  color: #fff !important;
+}
+
+.theme-btn.btn-whatsapp i {
+  color: #fff !important;
+  font-size: 20px;
+  margin-right: 10px;
 }
 
 .theme-btn.btn-three {
   background: #fff;
-  color: var(--theme-color);
+  color: var(--secondary-color) !important;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.theme-btn.btn-three:hover {
+  background: var(--secondary-color);
+  color: #fff !important;
+  box-shadow: 0 12px 35px rgba(26, 26, 46, 0.3);
+  transform: translateY(-2px);
 }
 
 .theme-btn:before,
@@ -706,18 +746,34 @@ img {
 }
 
 .sec-title h6 {
-  display: block;
-  font-size: 16px;
+  display: inline-block;
+  font-size: 13px;
   line-height: 22px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
+  color: var(--theme-color);
+  font-weight: 700;
+  letter-spacing: 3px;
+  position: relative;
+}
+
+.sec-title h6::before {
+  content: '';
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  width: 35px;
+  height: 2px;
+  background: var(--theme-color);
+  transform: translateY(-50%);
 }
 
 .sec-title h2 {
   display: block;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 42px;
+  line-height: 1.25;
   font-weight: 800;
+  color: var(--title-color);
 }
 
 .sec-title.light .sub-title,
@@ -726,7 +782,10 @@ img {
 }
 
 .sec-title p {
-  margin-top: 17px;
+  margin-top: 20px;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.7;
 }
 
 .sec-title h2 span {
@@ -2214,4 +2273,16 @@ button.ltr {
     height: 45px;
     line-height: 45px;
   }
+}
+/* Global Override to eliminate persisting blue */
+.product-content h3 a, 
+.product-link, 
+.product-title {
+  color: #ff4d5a !important;
+}
+
+.product-content h3 a:hover, 
+.product-link:hover {
+  opacity: 0.8 !important;
+  color: #ff4d5a !important;
 }
