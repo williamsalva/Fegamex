@@ -9,6 +9,9 @@
     "lint": "next lint",
     "sass": "sass --watch public/assets/scss/main.scss:public/assets/css/main.css"
   },
+  "engines": {
+    "node": "24.x"
+  },
   "dependencies": {
     "bootstrap-touchspin": "^4.7.3",
     "isotope-layout": "^3.0.6",
